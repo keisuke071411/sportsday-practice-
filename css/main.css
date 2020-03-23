@@ -1,0 +1,16 @@
+@import url("header.css");
+@import url("apply.css");
+@import url("message.css");
+@import url("about.css");
+@import url("schedule.css");
+@import url("mix.css");
+@import url("copy.css");
+html {
+    background: #f3c014;
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}

@@ -1,0 +1,103 @@
+.section_pine {
+    height: 70vh;
+    width: 100%;
+    padding: 0 14px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: #fff;
+}
+
+.logo {
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section_pine-logo {
+    max-width: 120%;
+    object-fit: contain;
+    height: 90%;
+}
+
+.section_message {
+    background-color: #f3c014;
+    color: #fff;
+    width: 100%;
+    padding: 150px 0;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    @media screen and (max-width: 480px) {
+        padding: 150px 0 100px;
+    }
+}
+
+.section_message::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    width: 120%;
+    height: 110px;
+    display: block;
+    margin: 3% -10% 0;
+    background: #fff;
+    transform-origin: left center;
+    transform: rotate(-4deg);
+    z-index: -1;
+}
+
+.section_message::after {
+    content: "";
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+    width: 120%;
+    height: 110px;
+    display: block;
+    margin: 3% -10% 0;
+    background: #fff;
+    transform-origin: left center;
+    transform: rotate(-4deg);
+    z-index: -1;
+}
+
+.message {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto 90px;
+    padding: 40px 0 0;
+    font-size: 22px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.message::after {
+    width: 28px;
+    height: 3px;
+    display: block;
+    margin: 3px auto 0;
+    background: #fff;
+    content: "";
+}
+
+.copy {
+    width: 100%;
+    margin: 0 0 30px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.content-b {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    @media screen and (max-width: 640px) {
+        text-align: left;
+    }
+}
