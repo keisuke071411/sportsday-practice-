@@ -31,9 +31,6 @@
     position: relative;
     z-index: 0;
     overflow: hidden;
-    @media screen and (max-width: 480px) {
-        padding: 150px 0 100px;
-    }
 }
 
 .section_message::before {
@@ -97,7 +94,15 @@
     display: block;
     padding: 10px;
     text-align: center;
-    @media screen and (max-width: 640px) {
+
+}
+
+@media screen and (max-width: 480px) {
+    .section_message {
+        padding: 150px 0 100px;
+    }
+
+    .content-b {
         text-align: left;
     }
 }

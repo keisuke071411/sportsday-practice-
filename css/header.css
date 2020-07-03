@@ -11,9 +11,6 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    @media screen and (max-width: 480px) {
-        padding: 4px 10px;
-    }
 }
 
 .header_logo {
@@ -31,4 +28,10 @@
 
 .header_nav-img {
     height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .header_top {
+        padding: 4px 10px;
+    }
 }

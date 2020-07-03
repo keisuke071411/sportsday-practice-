@@ -9,9 +9,6 @@
     overflow: hidden;
     text-align: center;
     font-size: 14px;
-    @media screen and (max-width: 420px) {
-        padding: 110px 0;
-    }
 }
 
 .final-tittle::before {
@@ -27,4 +24,10 @@
     transform-origin: left center;
     transform: rotate(-4deg);
     z-index: -1;
+}
+
+@media screen and (max-width: 420px) {
+    .final-tittle {
+        padding: 110px 0;
+    }
 }

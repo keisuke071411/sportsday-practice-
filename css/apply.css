@@ -15,15 +15,6 @@
     transition: 0.3s;
     box-shadow: 2px -2px 15px 5px #f3c014;
     text-decoration: none;
-    @media screen and (max-width: 420px) {
-        width: 90%;
-        height: 70px;
-        left: 0;
-        right: 0;
-        bottom: 12px;
-        margin: auto;
-        filter: drop-shadow(0px 0px 6px rgba(234, 185, 21, 0.8));
-    }
 }
 
 .apply_text {
@@ -31,9 +22,6 @@
     color: #eab915;
     letter-spacing: 0.5px;
     font-weight: bold;
-    @media screen and (max-width: 420px) {
-        font-size: 16px;
-    }
 }
 
 .apply:hover {
@@ -43,7 +31,7 @@
 }
 
 .apply:hover>.apply_text {
-    color: #fff !important;
+    color: #fff;
 }
 
 .apply_note {
@@ -52,12 +40,30 @@
     font-size: 11px;
     color: #888;
     border-bottom: 1px solid #aaa;
-    @media screen and (max-width: 420px) {
-        font-size: 9px;
-    }
 }
 
 .apply:hover>.apply_note {
-    color: #fff !important;
+    color: #fff;
     border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 420px) {
+    
+    .apply {
+        width: 90%;
+        height: 70px;
+        left: 0;
+        right: 0;
+        bottom: 12px;
+        margin: auto;
+        filter: drop-shadow(0px 0px 6px rgba(234, 185, 21, 0.8));
+    }
+
+    .apply_text {
+        font-size: 16px;
+    }
+    
+    .apply_note {
+        font-size: 9px;
+    }
 }
